@@ -1,10 +1,17 @@
 
 import java.util.*;
+
+
 public class basic {
     public static void main(String args[]) {
 
         Scanner sc = new Scanner (System.in);
 
+
+        System.out.println(" enter operator : ");
+
+        int operator = sc.nextInt();
+        
         System.out.println("enter a : ");
         int a = sc.nextInt();
 
@@ -12,31 +19,31 @@ public class basic {
 
         int b= sc.nextInt();
 
-        System.out.println("wrong  operator : ");
-
-        char operator = sc.next().charAt(0);
-
         
 
-    
+      switch(operator){
         
-        Case :System.out.println( a*b);
+        
+        case  0: 
+        int sum =a+b;
+        System.out.println( sum);
                       break;
-        Case :System.out.println(a - b);
+                    
+        case 1 :System.out.println(a - b);
                    break;
 
-        Case : System.out.println( a/ b);
+        case 2: System.out.println( a* b);
                    break;
  
-        Case  : System.out.println(a + b);
+        case 3  : System.out.println(a / b);
                    break;
-        Case  : System.out.println(a % b);
-                   break;
-        defult: System.out.println("Wrong operator ") ;   
-        System.out.println(a*b);       
+        
+        default: System.out.println(a%b) ;   
+          
         }
-        System.out.println(Number);
+        
     }
+}
 
 
 
